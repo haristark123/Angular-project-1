@@ -1,0 +1,14 @@
+<app-header (onSelected)="onNavigation($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- <app-recipes *ngIf="selected == 'recipe'"></app-recipes>
+      <app-shopping-list *ngIf="selected !== 'recipe'"></app-shopping-list> -->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <p appBasicHighlight>Hello This is a custom directive</p>
+  <p appBetterHighlightDirective [defaultColor]="'yellow'" [highColor]="'red'">
+    Hello This is a custom better directive
+  </p>
+</div>
